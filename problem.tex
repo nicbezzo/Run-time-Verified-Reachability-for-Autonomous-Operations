@@ -1,0 +1,15 @@
+%!TEX root = IROS2019_DNN.tex
+	
+\begin{section}{Problem Formulation} \label{sec:problem}
+	In this work we are interested in predicting if a system will be able to safely reach its goal state from a given initial state. Formally this problem can be casted as follows:
+	
+	\textbf{Problem 1: \textit{Run-time Safety Assurance}:}
+	Given the initial state of the system $ \boldsymbol{x}_0 $, at run time, predict whether the system is able to safely follow an obstacle free trajectory to a final goal under bounded disturbance, and measurement and process noises. Safety is satisfied if the following condition holds:
+%	The system is safe if the following safety condition is satisfied:
+	\begin{itemize}
+		\item{Safety Constraint:}	
+		\[ | \boldsymbol{p}(t) -\boldsymbol{p}_{o,i} | \geq r_{o,i}, \hspace{5pt} \forall t \in [0,T], \hspace{5pt} \forall i \in [0,n_o] \]	
+	\end{itemize}
+	where $ \boldsymbol{p}(t) $ is the position of the vehicle, $ \boldsymbol{p}_{o,i} $ and $ r_{o,i} $ are the position and the distance from the $ i^{\text{th}} $ obstacle respectively, $ n_o $ is the number of obstacles in the environment, and $ T $ is the duration of the operation. It is assumed that the obstacles are static with known positions and the system dynamics are invriants.
+	\end{section}
+	For ease of discussion in this work we consider that the goal position is unchanged and the disturbance is unknown but not changing during the interval of time in which it is active through the mission of the system. 

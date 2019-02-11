@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%2345678901234567890123456789012345678901234567890123456789012345678901234567890
+%        1         2         3         4         5         6         7         8
+
+\documentclass[letterpaper, 10 pt, conference]{ieeeconf}  % Comment this line out if you need a4paper
+
+%\documentclass[a4paper, 10pt, conference]{ieeeconf}      % Use this line for a4 paper
+
+\IEEEoverridecommandlockouts                              % This command is only needed if 
+                                                          % you want to use the \thanks command
+
+\overrideIEEEmargins                                      
+
+% Needed to meet printer requirements.
+
+% See the \addtolength command later in the file to balance the column lengths
+% on the last page of the document
+
+% The following packages can be found on http:\\www.ctan.org
+%\usepackage{graphics} % for pdf, bitmapped graphics files
+%\usepackage{epsfig} % for postscript graphics files
+%\usepackage{mathptmx} % assumes new font selection scheme installed
+%\usepackage{times} % assumes new font selection scheme installed
+%\usepackage{amsmath} % assumes amsmath package installed
+%\usepackage{amssymb}  % assumes amsmath package installed
+
+
+%\title{\LARGE \bf Fast Run-time Verified Reachability for Safe Autonomous Operations} 
+\title{\LARGE \bf A Framework for Verified Fast Run-time Reachability for Safe Autonomous Systems Operations} 
+
+\newcommand{\subparagraph}{}
+\newcommand\NB[1]{$\spadesuit$\footnote{NB: #1}}
+\newcommand\EY[1]{$\clubsuit$\footnote{EY: #1}}
+
+\renewcommand{\Re}{\mathbb{R}}
+\newcommand{\Ze}{\mathbb {Z}}
+\newcommand{\De}{\mathbb {D}}
+\newcommand{\Pe}{\mathbb {P}}
+\newcommand{\Ne}{\mathbb {N}}
+
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{subfigure}
+\usepackage{multirow}
+\usepackage{pbox}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{titlesec}
+\usepackage{bm}
+\usepackage{url}
+\usepackage{dblfloatfix} 
+
+\newtheorem{problem}{Problem}
+\newtheorem{lemma}{Lemma}
+
+\renewcommand{\baselinestretch}{0.95}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+\input{abstract}
+\input{introduction}
+\input{rel_lit}
+\input{problem}
+\input{model}
+\input{method}
+\input{simulation}
+\input{experiment}
+\input{conclusion}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{IEEEtran}
+\bstctlcite{IEEEexample:BSTcontrol}
+\bibliography{references}
+
+
+\end{document}
+
